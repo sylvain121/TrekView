@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5%;
+  border: solid black 1px;
+}
+.title {
+  padding-left: 1%;
+}
+
+.card:hover {
+  background-color: #46a35e;
+  cursor: pointer;
+}

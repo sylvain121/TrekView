@@ -1,0 +1,11 @@
+<div class="login" *ngIf="!user">
+  <button type="button" (click)="authService.GoogleAuth()">
+    <div>
+      <img ngSrc="assets/google_icon.svg" alt="G" height="32" width="32">
+    </div>
+    <div>Sign In</div>
+  </button>
+</div>
+<div *ngIf="user">
+<img [ngSrc]="user.photoURL" *ngIf="user.photoURL" width="32" height="32" alt="{{user.displayName}}">
+</div>
